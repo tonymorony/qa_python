@@ -42,7 +42,8 @@ class BooksCollector:
         return books_for_children
 
     # добавляем книгу в Избранное
-    def add_book_in_favorites(self, name):
+    # поправил ошибку в названии метода на английском
+    def add_book_to_favorites(self, name):
         if name in self.books_genre:
             if name not in self.favorites:
                 self.favorites.append(name)
