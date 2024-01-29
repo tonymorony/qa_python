@@ -33,8 +33,8 @@ class TestBooksCollector:
     def test_add_new_book_name_length_more_than_max_not_adding(self):
         collector = BooksCollector()
 
-        # имя длиной 43 символа
-        collector.add_new_book('Что делать, если ваш кот хочет вас убить!!!')
+        # имя длиной 41 символ
+        collector.add_new_book('Что делать, если ваш кот хочет вас убить!')
 
         assert len(collector.get_books_genre()) == 0
 
